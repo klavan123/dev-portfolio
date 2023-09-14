@@ -1,93 +1,219 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="output.css">
-</head>
-<body class="bg-black text-white mx-6">
-    <header class=" mt-8 flex items-center justify-between">
-        <div>
-            <a href="" class="pt-8 pl-8 text-2xl text-white xl:ml-6">Jonathan Speteer</a>
-        </div>
-        <nav class="flex items-center px-4 text-white  text-2xl">
-            <main class=" hidden  gap-4 lg:flex ">
-                <a href="#" class="hover:text-yellow-400">Articles</a>
-                <a href="#" class="hover:text-yellow-400">Chat</a>
-                <a href="#" class="hover:text-yellow-400">Awards</a>
-                <a href="#" class="hover:text-yellow-400">About</a>
-            </main>
-        </nav>
-        <button class="hidden py-4 px-4 bg-yellow-300  rounded-l text-2xl lg:block hover:bg-gray-400 ">Get Started</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="bg-black text-white mx-4">
+    <header class="mt-8 flex items-center justify-between relative">
+      <div>
+        <a
+          href=""
+          class="pt-8 pl-8 text-xl text-white font-extrabold z-20 md:text-2xl lg:text-4xl xl:ml-2"
+          >Jonathan Speteer</a
+        >
+      </div>
+      <nav class="flex items-center px-4 text-white relative text-2xl">
+        <main class="hidden gap-4 lg:flex">
+          <a href="#" class="hover:text-yellow-400 border-b-amber-400"
+            >Articles</a
+          >
+          <a href="#" class="hover:text-yellow-400">Chat</a>
+          <a href="#" class="hover:text-yellow-400">Awards</a>
+          <a href="#" class="hover:text-yellow-400">About</a>
+        </main>
+        <button
+          class="hidden py-4 px-4 bg-yellow-300 rounded-l text-2xl lg:block lg:ml-2 hover:bg-gray-400"
+        >
+          Get Started
+        </button>
 
-        <button class="mr-6"><img src="/dist/Design/Assets/Hamburger Menu.svg" alt="" class=" mr-6  items-center lg:hidden"></button>
+        <button
+          id="menu-btn"
+          class="hamburger focus:outline-none block lg:hidden"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+
+        <!--hamburger menu-->
+        <div class="lg:hidden">
+          <div
+            id="menu"
+            class="flex-col w-52 self-start top-0 left-22 right-32 text-center absolute text-black bg-yellow-300 hidden items-center space-y-6 py-8 px-12 drop-shadow-lg sm:self-center sm:w-auto"
+          >
+            <a href="#" class="hover:text-red-600">Articles</a>
+            <a href="#">Chat</a>
+            <a href="#">Awards</a>
+            <a href="#">About</a>
+          </div>
+        </div>
+      </nav>
     </header>
     <!--herosection-->
-    <section class=" grid  gap-4 items-center justify-center sm:mx-6 lg:grid-cols-2">
-        <div class="md:grid-cols-1 sm:text-center " >
-
-            <h1 class=" ml-4 text-4xl px-1 text-white  pt-16 mt-6 text-center sm2:text-8xl  md:text-left md:text-9xl lg:text-left lg:text-6xl   xl:text-12xl xl:text-left ">Helping companies build better, Scalable Softwares.</h1>
-
-        </div>
-        <div class="text-white"></div>
-        <div class="text-white text-2xl mt-4   text-center lg:text-left">
-            <p class=" sm:text-center  md:text-center lg:text-left">Award-winning developer and author,with over 15+ years working experience with fortunes of 500 companies like Apple,Google,Facebook,and more </p>
-            </div>
-       
+    <section
+      class="grid gap-4 items-center justify-center sm:mx-6 lg:grid-cols-2"
+    >
+      <div class="md:grid-cols-1 sm:text-center">
+        <h1
+          class="ml-4 text-4xl px-1 text-white pt-16 mt-6 text-center sm2:text-8xl md:text-left md:text-9xl lg:text-left lg:text-6xl xl:text-12xl xl:text-left"
+        >
+          Helping companies build better, Scalable Softwares.
+        </h1>
+      </div>
+      <div class="text-white"></div>
+      <div class="text-white text-2xl mt-4 text-center lg:text-left">
+        <p class="sm:text-center md:text-center lg:text-left">
+          Award-winning developer and author,with over 15+ years working
+          experience with fortunes of 500 companies like
+          Apple,Google,Facebook,and more
+        </p>
+      </div>
     </section>
     <!--icon section-->
-    <div class="grid  mt-12  items-center grid-cols-3  md:px-8 md:grid-cols-3 md:justify-center  lg:grid-cols-6 lg:justify-around lg:pl-4 pr-4 gap-6 ">
-        <div >
-            <img src="./Design/Assets/Logos/JP Morgan.svg" alt="">
-        </div>
-        <div>
-            <img src="./Design/Assets/Logos/Walmart.svg" alt="">
-        </div>
-        <div>
-            <img src="./Design/Assets/Assets/Logos/Visa.svg" alt="">
-        </div>
-        <div>
-            <img src="./Design/Assets/Logos/Tinder.svg" alt="">
-        </div>
-        <div>
-            <img src="./Design/Assets/Logos/Verizon.svg" alt="">
-        </div>
-        <div>
-            <img src="./Design/Assets/Logos/Samsung.svg" alt="">
-        </div>
+    <div
+      class="grid mt-12 items-center grid-cols-3 md:px-8 md:grid-cols-3 md:justify-center lg:grid-cols-6 lg:justify-around lg:pl-4 pr-4 gap-6"
+    >
+      <div>
+        <img src="./Design/Assets/Logos/JP Morgan.svg" alt="JP Morgan" />
+      </div>
+      <div>
+        <img src="./Design/Assets/Logos/Walmart.svg" alt="Walmart" />
+      </div>
+      <div>
+        <img src="./Design/Assets/Assets/Logos/Visa.svg" alt="Visa" />
+      </div>
+      <div>
+        <img src="./Design/Assets/Logos/Tinder.svg" alt="Tinder" />
+      </div>
+      <div>
+        <img src="./Design/Assets/Logos/Verizon.svg" alt="Verizon" />
+      </div>
+      <div>
+        <img src="./Design/Assets/Logos/Samsung.svg" alt="Samsung" />
+      </div>
     </div>
     <!--hero section-->
-    <section class=" mt-10 flex   flex-col px-6 justify-center mb-4  items-center gap-4 md:px-12 md:mx-8  md:justify-center  lg:mx-2 lg:flex-row lg:gap-6">
-    <div class=" ">
-        <img src="./Design/Assets/Spense.png" alt="" class=" ">
-        <h2 class=" py-2 text-4xl ">Spense.Com</h2>
+    <section
+      class="mt-10 flex flex-col px-6 justify-center mb-4 items-center gap-4 md:px-12 md:mx-8 md:justify-center lg:mx-2 lg:flex-row lg:gap-6"
+    >
+      <div class=" ">
+        <img src="./Design/Assets/Spense.png" alt="" class="object-cover" />
+        <h2 class="py-2 text-4xl flex items-center gap-6">Spense.Com</h2>
         <p class="md:text-2xl">
-            
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ad nisi eaque quibusdam magni doloribus suscipit. Officiis soluta eveniet repellat ex vel adipisci ad ipsam accusamus eaque nulla, amet est aliquam commodi, harum, aperiam dolorem.
-            
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ad
+          nisi eaque quibusdam magni doloribus suscipit. Officiis soluta eveniet
+          repellat ex vel adipisci ad ipsam accusamus eaque nulla, amet est
+          aliquam commodi, harum, aperiam dolorem.
         </p>
-
-        
-    </div>
-    <div>
-        <img src="./Design/Assets/YelpCamp.png" alt="">
+      </div>
+      <div>
+        <img src="./Design/Assets/YelpCamp.png" alt="" />
         <h2 class="text-4xl py-2">YelpCamp.com</h2>
         <p class="md:text-2xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ad nisi eaque quibusdam magni doloribus suscipit. Officiis soluta eveniet repellat ex vel adipisci ad ipsam accusamus eaque nulla, amet est aliquam commodi, harum, aperiam dolorem.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ad
+          nisi eaque quibusdam magni doloribus suscipit. Officiis soluta eveniet
+          repellat ex vel adipisci ad ipsam accusamus eaque nulla, amet est
+          aliquam commodi, harum, aperiam dolorem.
         </p>
-    </div>
+      </div>
     </section>
     <!--Aside-->
-    <aside class="bg-gray-400">
-        <div>
-            <h2>
-        </div>
-        
-
-
+    <aside
+      class="bg-gray-400 w-full items-center mt-3 justify-around flex flex-col gap-6 xl:flex xl:flex-row xl:text-2xl"
+    >
+      <div class="pl-4 self-center">
+        <h3 class="pl-4 pt-8 text-3xl font-bold text-gray-700 xl:text-4xl">
+          A co-founder at one of the world largest comunities
+        </h3>
+        <p class="py-8 px-8 opacity-3 capitalize">
+          the combine experience i have working at the top of Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Voluptas provident animi
+          quisquam? Impedit, voluptates assumenda sunt dignissimos dicta eaque
+          voluptas id iste officiis error iusto. Ipsa dolores fugit animi sequi
+          d quisquam reiciendis dolor, quis nobis sit modi!
+        </p>
+        l
+      </div>
+      <div class="opacity-3 px-8 py-8 xl:pt-8 xl:self-center">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          ipsum amet et, ad sed quis, cum voluptatibus voluptate quasi fuga qui
+          harum ab neque optio labore recusandae quidem, aut voluptatem
+          praesentium placeat. Eos cumque nemo totam laborum similique corporis,
+          quam sapiente repellendus molestias autem voluptates, magnam
+          consequatur at consectetur accusantiumautem cupiditate quos!
+        </p>
+      </div>
     </aside>
-    
-    
-</body>
+    <!--hero-->
+    <aside
+      class="mt-4 text-center grid items-center grid-cols-1 lg:grid lg:grid-cols-2 lg:justify-between"
+    >
+      <div class="text-center xl:text-left xl:pl-8">
+        <h3 class="text-3xl font-bold">Interested in working with me?</h3>
+        <p class="py-4 text-2xl md:text-2xl">
+          I'm active on all social media platforms listed below,but you can also
+          drop an Email and i will get back at you within 24-48 hours
+        </p>
+
+        <button
+          class="xl:ml-2 mt-4 inline-block py-2 px-4 cursor-pointer text-2xl bg-yellow-300 md:py-4 text-gray-100 rounded-md hover:bg-gray-500"
+        >
+          Get in Touch
+        </button>
+      </div>
+      <div>
+        <div></div>
+      </div>
+    </aside>
+    <!--footer-->
+    <footer
+      class="bg-gray-400 h-12 w-full flex justify-between items-center mt-4 mb-4"
+    >
+      <div>
+        <div>
+          <a href="#home" class="pl-4 capitalize md:text-3xl"
+            >Jonathan specteer</a
+          >
+        </div>
+      </div>
+
+      <div class="flex gap-4 mr-4">
+        <div>
+          <a href="#" class="hover:translate-x-4 hover:bg-yellow-400">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="w-8"
+              fill="none"
+              ="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 12C0 5.3726 5.3726 0 12 0C18.6274 0 24 5.3726 24 12C24 18.6274 18.6274 24 12 24C5.3726 24 0 18.6274 0 12ZM11.6406 9.75375L11.6658 10.169L11.2461 10.1181C9.71845 9.92325 8.38385 9.26225 7.25065 8.15215L6.6967 7.60135L6.554 8.0081C6.2518 8.9148 6.44485 9.8724 7.0744 10.5164C7.41015 10.8723 7.3346 10.9232 6.75545 10.7113C6.554 10.6435 6.3777 10.5927 6.36095 10.6181C6.3022 10.6774 6.5036 11.4486 6.6631 11.7536C6.88135 12.1773 7.3262 12.5925 7.81305 12.8383L8.22435 13.0332L7.7375 13.0416C7.26745 13.0416 7.25065 13.0501 7.30105 13.2281C7.4689 13.7789 8.132 14.3636 8.87065 14.6179L9.3911 14.7958L8.9378 15.0669C8.2663 15.4567 7.4773 15.6771 6.6883 15.694C6.31055 15.7025 6 15.7364 6 15.7619C6 15.8465 7.02405 16.3211 7.62 16.5075C9.40785 17.0583 11.5315 16.8211 13.1263 15.8805C14.2594 15.211 15.3926 13.8806 15.9214 12.5926C16.2068 11.9061 16.4922 10.652 16.4922 10.0504C16.4922 9.66055 16.5173 9.6097 16.9874 9.1436C17.2644 8.87245 17.5246 8.57585 17.575 8.4911C17.6589 8.3301 17.6506 8.3301 17.2225 8.47415C16.509 8.7284 16.4082 8.6945 16.7608 8.31315C17.021 8.042 17.3316 7.5505 17.3316 7.40645C17.3316 7.381 17.2057 7.4234 17.063 7.49965C16.9119 7.5844 16.5762 7.7115 16.3243 7.7878L15.871 7.93185L15.4598 7.6522C15.2332 7.49965 14.9141 7.3302 14.7463 7.27935C14.3182 7.1607 13.6635 7.17765 13.2774 7.31325C12.2282 7.69455 11.5651 8.67755 11.6406 9.75375Z"
+                fill="white"
+              /></svg
+          ></a>
+        </div>
+        <div>
+          <a href="#"
+            ><img src="./Design/Assets/Social Icons/LinkedIn.svg" alt=""
+          /></a>
+        </div>
+        <div>
+          <a href="#"
+            ><img src="./Design/Assets/Social Icons/Github.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
